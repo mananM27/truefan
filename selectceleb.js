@@ -106,7 +106,7 @@ function customeCard(data, id) {
   card.addEventListener("click", () => {
     image.style.border = "2px solid rgba(255, 50, 127, 1)";
     localStorage.setItem("celeb", data.name);
-    window.location.href = "newpage.html";
+    window.location.href = "newonboarding.html";
   });
 
   const text1 = document.createElement("p");

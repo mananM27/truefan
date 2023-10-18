@@ -3,34 +3,36 @@ body {
   padding: 0;
 }
 
-.video-container {
-  background-color: rgb(0, 0, 0);
+.onboard-video-container {
   position: relative;
-  height: 70vh;
+  height: 80vh;
+  margin-inline: auto;
 }
 
-.audio-icon {
+.onboard-audio-icon {
   position: absolute;
-  top: 4.65%;
-  right: 3.85%;
+  top: 10.65%;
+  left: 4.85%;
   height: 45px;
   width: 45px;
 }
-
-.adVideo {
+.onboard-adVideo {
   height: inherit;
+  margin-inline: auto;
+  width: inherit;
 }
 
-video {
-  object-fit: cover;
+.onboard-adVideo video {
+  object-fit: contain;
   overflow: hidden;
   width: 100%;
   border: 0;
+  width: 100%;
 }
 
-.form-container {
+.onboard-form-container {
   position: absolute;
-  height: calc(410px - 32px);
+  height: auto;
   width: 100%;
   bottom: 0;
   right: 0;
@@ -38,17 +40,17 @@ video {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   padding: 16px 12px;
-  background-color: rgb(0, 0, 0);
+  background-image: linear-gradient(rgba(22, 24, 28, 0), rgb(22, 24, 28), rgb(22, 24, 28), rgb(22, 24, 28));
 }
 
-.form-container form {
+.onboard-form-container div {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 @media only screen and (max-width: 500px) {
-  .form-container {
+  .onboard-form-container {
     width: auto;
     height: auto;
   }
