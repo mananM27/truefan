@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.video-container {
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  height: 70vh;
+}
+
+.audio-icon {
+  position: absolute;
+  top: 4.65%;
+  right: 3.85%;
+  height: 45px;
+  width: 45px;
+}
+.adVideo {
+  height: inherit;
+}
+
+video {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  border: 0;
+}
+
+.form-container {
+  position: absolute;
+  height: calc(410px - 32px);
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  padding: 16px 12px;
+  background-color: rgb(0, 0, 0);
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .form-container {
+    width: auto;
+    height: 50vh;
+  }
+}
