@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .innerBody {
   padding-inline: 20px;
   margin-bottom: 150px;
