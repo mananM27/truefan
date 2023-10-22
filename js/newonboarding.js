@@ -44,6 +44,15 @@ function button(data, id) {
 }
 
 function form1() {
+  if(localStorage.getItem("user") === null){
+    window.location.href = "index.html";
+  }
+  
+  if(localStorage.getItem("celeb") === null)
+  {
+    window.location.href = "selectceleb.html";
+  }
+
   localStorage.getItem("for") !== null && localStorage.removeItem("for");
   localStorage.getItem("forName") !== null &&
     localStorage.removeItem("forName");

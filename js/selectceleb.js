@@ -132,3 +132,9 @@ for (celeb in celebObj) {
   const card = customeCard(celebObj[celeb], celeb);
   document.getElementById("list").append(card);
 }
+
+(()=>{
+  if(localStorage.getItem("user") === null){
+    window.location.href = "index.html";
+  }  
+})();
