@@ -93,6 +93,58 @@ const celebObj = [
     videos: "4k",
     isNew: false,
   },
+  {
+    image: "./assets/bobbydeol.jpg",
+     name: "Bobby Deol",
+    videos: "4k",
+    isNew: false
+  },
+   {
+    image: "./assets/faisal.jpg",
+     name: "Faisal Sheikh",
+    videos: "4k",
+    isNew: false
+  }, {
+    image: "./assets/honeysingh.jpg",
+     name: "Honey Singh",
+    videos: "4k",
+    isNew: false
+  }, {
+    image: "./assets/msdhoni.jpg",
+     name: "M.S Dhoni",
+    videos: "4k",
+    isNew: false
+  }, {
+    image: "./assets/parmishverma.jpg",
+     name: "Parmish Verma",
+    videos: "4k",
+    isNew: false
+  }, {
+    image: "./assets/sapnachaudhary.jpg",
+     name: "Sapna Chaudhary",
+    videos: "4k",
+    isNew: false
+  },, {
+    image: "./assets/rashmika.jpg",
+     name: "Rashmika Mandanna",
+    videos: "4k",
+    isNew: false
+  },, {
+    image: "./assets/sunnydeol.jpg",
+     name: "Sunny Deol",
+    videos: "4k",
+    isNew: false
+  }, {
+    image: "./assets/viratkohli.jpg",
+     name: "Virat Kohli",
+    videos: "4k",
+    isNew: false
+  }, {
+    image: "./assets/payaldahiya.jpg",
+     name: "Payal Dahiya",
+    videos: "4k",
+    isNew: false
+  },
 ];
 
 function customeCard(data, id) {

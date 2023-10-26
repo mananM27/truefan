@@ -30,6 +30,14 @@
   align-items: center;
 }
 
+
+.custome-modal-image{
+  width:200px;
+  height: 200px;
+  margin-inline: auto;
+  margin-bottom: 10px;
+}
+
 /* btns */
 .btn-1 {
   height: 49.33px;
