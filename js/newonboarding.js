@@ -46,11 +46,13 @@ function button(data, id) {
 function form1() {
   if(localStorage.getItem("user") === null){
     window.location.href = "index.html";
+    return;
   }
   
   if(localStorage.getItem("celeb") === null)
   {
     window.location.href = "selectceleb.html";
+    return;
   }
 
   localStorage.getItem("for") !== null && localStorage.removeItem("for");

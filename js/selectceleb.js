@@ -188,5 +188,6 @@ for (celeb in celebObj) {
 (()=>{
   if(localStorage.getItem("user") === null){
     window.location.href = "index.html";
+    return;
   }  
 })();

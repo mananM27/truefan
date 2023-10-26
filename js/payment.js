@@ -43,15 +43,18 @@ card2.addEventListener("click", () => {
 (() => {
   if(localStorage.getItem("user") === null){
     window.location.href = "index.html";
+    return;
   }
   
   if(localStorage.getItem("celeb") === null)
   {
     window.location.href = "selectceleb.html";
+    return;
   }
 
   if ( localStorage.getItem("for") === null  ||localStorage.getItem("forName") === null || localStorage.getItem("purpose") === null   || localStorage.getItem("phoneNumber") === null ) {
-    window.location.href = "newonboarding.html";    
+    window.location.href = "newonboarding.html";   
+    return;    
   }
 })()
 
