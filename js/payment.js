@@ -101,7 +101,7 @@ function pay() {
     btn.style.fontSize = "1rem";
     btn.style.color = "white";
     btn.addEventListener("click", () => {
-      const string = encodeURIComponent(`"🌟Hi Dharma, Unleash the Celebrity Magic on your special day🌟\n\nWant a Personalised Birthday Video Message from ${localStorage.getItem("celeb")}? 🌠✨\n\nGuess what? 🎉 Delivery in just 24 hours! ⏰🚀\n\nSo, why wait? Click below to get FLAT10% OFF 🌟🎥\n\n100% Refund Guarantee if video is not delivered on time! 🤝"`);
+      const string = encodeURIComponent(`🌟Hi Dharma, Unleash the Celebrity Magic on your special day🌟\n\nWant a Personalised Birthday Video Message from ${localStorage.getItem("celeb")}? 🌠✨\n\nGuess what? 🎉 Delivery in just 24 hours! ⏰🚀\n\nSo, why wait? Click below to get FLAT10% OFF 🌟🎥\n\n100% Refund Guarantee if video is not delivered on time! 🤝`);
       window.open( `https://wa.me/916376657384?text=${string}`)
       mainContainer.removeChild(modal);
     });
