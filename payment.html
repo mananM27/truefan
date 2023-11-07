@@ -1,239 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="stylesheet" href="./css/typography.css" />
-    <link rel="stylesheet" href="./css/component.css" />
-    <link rel="stylesheet" href="./css//payment.css" />
-    <script src="https://cdn.jsdelivr.net/npm/dotenv@16.3.1/lib/main.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <div
-      class="main-container"
-      id="mainContainer"
-      style="background: rgb(10, 7, 16)"
-    >
-      <div class="sub-container">
-        <div style="height: 100vh; overflow: auto">
-          <div class="innerBody">
-            <div
-              class="d-flex align-items-center flex-reverse justify-content-end"
-            >
-              <div class="d-flex flex-column" style="margin-right: 12px">
-                <p class="mb-0 text-3">Explore</p>
-                <p class="mb-0 text-3">More</p>
-              </div>
-              <svg
-                width="49"
-                height="49"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  opacity="0.1"
-                  y="0.063"
-                  width="48"
-                  height="48"
-                  rx="16"
-                  transform="rotate(-.073 0 .063)"
-                  fill="#fff"
-                ></rect>
-                <g clip-path="url(#menu_svg__a)">
-                  <path
-                    d="M30.375 35.996h-12.75A5.631 5.631 0 0 1 12 30.371v-7.887c0-1.744.828-3.416 2.214-4.473l6.375-4.862a5.639 5.639 0 0 1 6.822 0l2.026 1.544v-1.197c.05-1.243 1.826-1.242 1.875 0v3.09a.937.937 0 0 1-1.505.746l-3.532-2.692a3.76 3.76 0 0 0-4.55 0l-6.374 4.862a3.772 3.772 0 0 0-1.476 2.982v7.887a3.754 3.754 0 0 0 3.75 3.75h12.75a3.754 3.754 0 0 0 3.75-3.75v-7.887a3.774 3.774 0 0 0-1.46-2.992.937.937 0 1 1 1.138-1.49C35.179 19.05 36 20.725 36 22.483v7.887a5.631 5.631 0 0 1-5.625 5.625Zm-8.25-13.171c-.647 0-1.172.524-1.172 1.172.062 1.554 2.282 1.553 2.344 0 0-.648-.525-1.172-1.172-1.172Zm4.922 1.172c-.062 1.554-2.282 1.553-2.344 0 .062-1.555 2.282-1.554 2.344 0Zm-3.75 3.75c-.062 1.554-2.282 1.553-2.344 0 .062-1.555 2.282-1.554 2.344 0Zm3.75 0c-.062 1.554-2.282 1.553-2.344 0 .062-1.555 2.282-1.554 2.344 0Z"
-                    fill="#fff"
-                  ></path>
-                </g>
-                <defs>
-                  <clipPath id="menu_svg__a">
-                    <path
-                      fill="#fff"
-                      transform="translate(12 12)"
-                      d="M0 0h24v24H0z"
-                    ></path>
-                  </clipPath>
-                </defs>
-              </svg>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/typography.css" />
+  <link rel="stylesheet" href="./css/component.css" />
+  <link rel="stylesheet" href="./css//payment.css" />
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <title>Document</title>
+</head>
+<body>
+  <div class="main-container" id="mainContainer" style="background: rgb(10, 7, 16)">
+    <div class="sub-container">
+      <div style="height: 100vh; overflow: auto">
+        <div class="innerBody">
+          <div class="d-flex align-items-center flex-reverse justify-content-end">
+            <div class="d-flex flex-column" style="margin-right: 12px">
+              <p class="mb-0 text-3">Explore</p>
+              <p class="mb-0 text-3">More</p>
             </div>
-            <div class="d-flex flex-column">
-              <p class="mb-0 heading-2">Choose Your experience</p>
-              <div class="custom-card-1" id="custom-card-1">
-                <div class="d-inline mb-2">
-                  <p class="text-3 mb-0">Standard Personalized Video</p>
-                  <span style="color: rgb(194, 194, 194)">@ ₹299</span>
-                </div>
-                <div class="d-flex flex-column align-items-center">
-                  <div
-                    id="listItem"
-                    class="d-flex justify-content-start align-items-center w-100 mt-1"
-                  >
-                    <svg
-                      width="15"
-                      height="12"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="m4.702 8.948-3.29-3.553L0 6.921 4.702 12 14.4 1.526 12.987 0 4.702 8.948Z"
-                        fill="#41CB69"
-                      ></path>
-                    </svg>
-                    <p class="mb-0 text-2">Video duration 10-15 secs</p>
-                  </div>
-                  <div
-                    id="listItem"
-                    class="d-flex justify-content-start align-items-center w-100 mt-1"
-                  >
-                    <svg
-                      width="15"
-                      height="12"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="m4.702 8.948-3.29-3.553L0 6.921 4.702 12 14.4 1.526 12.987 0 4.702 8.948Z"
-                        fill="#41CB69"
-                      ></path>
-                    </svg>
-                    <p class="mb-0 text-2" id="revelCeleb"></p>
-                  </div>
-                  <div id="listItem" class="d-flex justify-content-start w-100">
-                    <div>
-                      <svg
-                        width="15"
-                        height="12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="m4.702 8.948-3.29-3.553L0 6.921 4.702 12 14.4 1.526 12.987 0 4.702 8.948Z"
-                          fill="#41CB69"
-                        ></path>
-                      </svg>
-                    </div>
-                    <p class="mb-0 text-2" id="exampleMsg"></p>
-                  </div>
-                </div>
-              </div>
-              <div class="custom-card-2 mt-4" id="custom-card-2">
-                <div class="pill">
-                  <p class="mb-0 text-5">Best Experience!</p>
-                </div>
-                <div class="mb-2">
-                  <p class="mb-0 text-4">Exclusive @ ₹599 per video</p>
-                </div>
-                <div class="d-flex flex-column align-items-center">
-                  <div class="d-flex justify-content-start w-100 mt-1">
-                    <div>
-                      <svg
-                        width="15"
-                        height="12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="m4.702 8.948-3.29-3.553L0 6.921 4.702 12 14.4 1.526 12.987 0 4.702 8.948Z"
-                          fill="#FED022"
-                        ></path>
-                      </svg>
-                    </div>
-                    <p class="mb-0 text-2">Video duration 20-25 secs</p>
-                  </div>
-                  <div class="d-flex justify-content-start w-100 mt-1">
-                    <div>
-                      <svg
-                        width="15"
-                        height="12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="m4.702 8.948-3.29-3.553L0 6.921 4.702 12 14.4 1.526 12.987 0 4.702 8.948Z"
-                          fill="#FED022"
-                        ></path>
-                      </svg>
-                    </div>
-                    <p class="mb-0 text-2" id="revealCelebForPro"></p>
-                  </div>
-                  <div class="d-flex justify-content-start w-100 mt-1">
-                    <div>
-                      <svg
-                        width="15"
-                        height="12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="m4.702 8.948-3.29-3.553L0 6.921 4.702 12 14.4 1.526 12.987 0 4.702 8.948Z"
-                          fill="#FED022"
-                        ></path>
-                      </svg>
-                    </div>
-                    <p class="mb-0 text-2" id="exampleMsgPro"></p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <svg width="49" height="49" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect opacity="0.1" y="0.063" width="48" height="48" rx="16" transform="rotate(-.073 0 .063)" fill="#fff">
+              </rect>
+              <g clip-path="url(#menu_svg__a)">
+                <path
+                  d="M30.375 35.996h-12.75A5.631 5.631 0 0 1 12 30.371v-7.887c0-1.744.828-3.416 2.214-4.473l6.375-4.862a5.639 5.639 0 0 1 6.822 0l2.026 1.544v-1.197c.05-1.243 1.826-1.242 1.875 0v3.09a.937.937 0 0 1-1.505.746l-3.532-2.692a3.76 3.76 0 0 0-4.55 0l-6.374 4.862a3.772 3.772 0 0 0-1.476 2.982v7.887a3.754 3.754 0 0 0 3.75 3.75h12.75a3.754 3.754 0 0 0 3.75-3.75v-7.887a3.774 3.774 0 0 0-1.46-2.992.937.937 0 1 1 1.138-1.49C35.179 19.05 36 20.725 36 22.483v7.887a5.631 5.631 0 0 1-5.625 5.625Zm-8.25-13.171c-.647 0-1.172.524-1.172 1.172.062 1.554 2.282 1.553 2.344 0 0-.648-.525-1.172-1.172-1.172Zm4.922 1.172c-.062 1.554-2.282 1.553-2.344 0 .062-1.555 2.282-1.554 2.344 0Zm-3.75 3.75c-.062 1.554-2.282 1.553-2.344 0 .062-1.555 2.282-1.554 2.344 0Zm3.75 0c-.062 1.554-2.282 1.553-2.344 0 .062-1.555 2.282-1.554 2.344 0Z"
+                  fill="#fff"></path>
+              </g>
+              <defs>
+                <clipPath id="menu_svg__a">
+                  <path fill="#fff" transform="translate(12 12)" d="M0 0h24v24H0z"></path>
+                </clipPath>
+              </defs>
+            </svg>
           </div>
-        </div>
-        <div class="footer">
           <div class="d-flex flex-column">
-            <div class="payementcard" id="payementcard" onclick="pay()" >
-              <div
-                class="d-flex align-items-center justify-content-center gap-2"
-              >
-                <img
-                  width="23px"
-                  height="23px"
-                  src="https://webapps.truefan.in/_next/static/media/safe_shield_white.08716190.png"
-                />
-                <div class="d-inline">
-                  <p class="mb-0 text-5">100% Safe &</p>
-                  <p class="mb-0 text-5">Secure Payments</p>
+            <p class="mb-0 heading-2">Choose Your experience</p>
+            <div class="custom-card-1" id="custom-card-1">
+              <div class="d-inline mb-2">
+                <p class="text-3 mb-0">Standard Personalized Video</p>
+                <span style="color: rgb(194, 194, 194)">@ ₹299</span>
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <div id="listItem" class="d-flex justify-content-start align-items-center w-100 mt-1">
+                  <svg width="15" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m4.702 8.948-3.29-3.553L0 6.921 4.702 12 14.4 1.526 12.987 0 4.702 8.948Z" fill="#41CB69">
+                    </path>
+                  </svg>
+                  <p class="mb-0 text-2">Video duration 10-15 secs</p>
+                </div>
+                <div id="listItem" class="d-flex justify-content-start align-items-center w-100 mt-1">
+                  <svg width="15" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m4.702 8.948-3.29-3.553L0 6.921 4.702 12 14.4 1.526 12.987 0 4.702 8.948Z" fill="#41CB69">
+                    </path>
+                  </svg>
+                  <p class="mb-0 text-2" id="revelCeleb"></p>
+                </div>
+                <div id="listItem" class="d-flex justify-content-start w-100">
+                  <div>
+                    <svg width="15" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m4.702 8.948-3.29-3.553L0 6.921 4.702 12 14.4 1.526 12.987 0 4.702 8.948Z"
+                        fill="#41CB69"></path>
+                    </svg>
+                  </div>
+                  <p class="mb-0 text-2" id="exampleMsg"></p>
                 </div>
               </div>
-              <div class="d-flex align-items-center justify-content-end">
-                <p id="priceOf" class="mb-0" style="margin-right: 10px">
-                  Pay ₹299 To Proceed
-                </p>
-                <div>
-                  <svg
-                    width="19"
-                    height="15"
-                    viewBox="0 0 19 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.93 1L18 7.07L11.93 13.14M1 7.07H17.83"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg>
+            </div>
+            <div class="custom-card-2 mt-4" id="custom-card-2">
+              <div class="pill">
+                <p class="mb-0 text-5">Best Experience!</p>
+              </div>
+              <div class="mb-2">
+                <p class="mb-0 text-4">Exclusive @ ₹599 per video</p>
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <div class="d-flex justify-content-start w-100 mt-1">
+                  <div>
+                    <svg width="15" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m4.702 8.948-3.29-3.553L0 6.921 4.702 12 14.4 1.526 12.987 0 4.702 8.948Z"
+                        fill="#FED022"></path>
+                    </svg>
+                  </div>
+                  <p class="mb-0 text-2">Video duration 20-25 secs</p>
+                </div>
+                <div class="d-flex justify-content-start w-100 mt-1">
+                  <div>
+                    <svg width="15" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m4.702 8.948-3.29-3.553L0 6.921 4.702 12 14.4 1.526 12.987 0 4.702 8.948Z"
+                        fill="#FED022"></path>
+                    </svg>
+                  </div>
+                  <p class="mb-0 text-2" id="revealCelebForPro"></p>
+                </div>
+                <div class="d-flex justify-content-start w-100 mt-1">
+                  <div>
+                    <svg width="15" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m4.702 8.948-3.29-3.553L0 6.921 4.702 12 14.4 1.526 12.987 0 4.702 8.948Z"
+                        fill="#FED022"></path>
+                    </svg>
+                  </div>
+                  <p class="mb-0 text-2" id="exampleMsgPro"></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="footer">
+        <div class="d-flex flex-column">
+          <div class="payementcard" id="payementcard">
+            <div class="d-flex align-items-center justify-content-center gap-2">
+              <img width="23px" height="23px"
+                src="https://webapps.truefan.in/_next/static/media/safe_shield_white.08716190.png" />
+              <div class="d-inline">
+                <p class="mb-0 text-5">100% Safe &</p>
+                <p class="mb-0 text-5">Secure Payments</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-end">
+              <p id="priceOf" class="mb-0" style="margin-right: 10px">
+                Pay ₹299 To Proceed
+              </p>
+              <div>
+                <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.93 1L18 7.07L11.93 13.14M1 7.07H17.83" stroke="black" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="./js/payment.js"></script>
-  </body>
+  </div>
+  <script>
+    document.getElementById("payementcard").addEventListener("click", pay);
+    async function pay() {
+      if (localStorage.getItem("celeb") !== null) {
+
+        if (localStorage.getItem("amount") !== null) {
+          const amount = localStorage.getItem("amount");
+
+          const data = await fetch("https://viuu7g5ryoxzjit7csemorlt4e0onbkh.lambda-url.ap-south-1.on.aws/", {
+            method: "POST",
+            body: JSON.stringify({
+              payload: {
+                amount: +amount * 100, // amount in the smallest currency unit
+                currency: 'INR',
+                receipt: `${new Date().getTime()}`,
+              },
+            })
+          })
+          const res = await data.json();
+
+          const options = {
+            "key": "rzp_test_FOi8C3L2c6hu16",
+            "amount": `${+amount * 100}`,
+            "currency": "INR",
+            "name": "TruFan",
+            "description": "Test Transaction",
+            "order_id": `${res?.order?.id}`,
+            "callback_url": "https://truefam.netlify.app/index.html",
+            "prefill": {
+              "name": `${JSON.parse(localStorage.getItem("user")).name}`,
+              "contact": localStorage.getItem("phoneNumber")
+            },
+            "notes": {
+              "address": "Razorpay Corporate Office"
+            },
+            "theme": {
+              "color": +amount === 599 ? "#FFD041" : "#2ECB5A"
+            }
+          }
+          var rzp1 = new Razorpay(options);
+          rzp1.open();
+          rzp1.on('payment.failed', function (response) {
+            alert(response.error.code);
+            alert(response.error.description);
+            alert(response.error.source);
+            alert(response.error.step);
+            alert(response.error.reason);
+            alert(response.error.metadata.order_id);
+            alert(response.error.metadata.payment_id);
+          });
+        }
+      } else {
+        window.location.href = "index.html";
+      }
+    }
+  </script>
+  <script src="./js/payment.js"></script>
+</body>
 </html>
