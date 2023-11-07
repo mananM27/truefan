@@ -29,6 +29,7 @@ card1.addEventListener("click", () => {
   priceOf.innerText = "Pay ₹299 To Proceed";
   card2.style = "border:0px";
   card1.style = "border: 2px solid rgb(46, 203, 90);";
+  localStorage.setItem("amount","299");
 });
 
 card2.addEventListener("click", () => {
@@ -38,6 +39,7 @@ card2.addEventListener("click", () => {
     "background-image: linear-gradient(81.5111deg, rgb(255, 208, 65), rgb(255, 208, 65));";
   priceOf.innerText = "Pay ₹599 To Proceed";
   card1.style = "border:0px";
+  localStorage.setItem("amount","599");
 });
 
 (() => {
@@ -56,6 +58,8 @@ card2.addEventListener("click", () => {
     window.location.href = "newonboarding.html";   
     return;    
   }
+
+  localStorage.setItem("amount","299");
 })()
 
 
