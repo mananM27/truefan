@@ -82,7 +82,7 @@ const celebObj = [
   {
     image:
       "https://cdn.truefans.in/home-assets/yohani_onboarding_card_1683634662995.png",
-    name: "Yohani Dilokia",
+    name: "Yohani Diloka",
     videos: "4k",
     isNew: false,
   },
@@ -141,7 +141,7 @@ const celebObj = [
     isNew: false
   }, {
     image: "./assets/payaldahiya.jpg",
-     name: "Payal Dahiya",
+     name: "Pranjal Dahiya",
     videos: "4k",
     isNew: false
   },
